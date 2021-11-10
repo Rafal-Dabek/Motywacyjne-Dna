@@ -181,15 +181,47 @@ function done2()
 function show_table()
 {
   
-  if (document.getElementById("result_table").style.display == "none")
-        document.getElementById("result_table").style.display="block";
-    else if(document.getElementById("result_table").style.display="block")
-        document.getElementById("result_table").style.display="none";
+  if (document.getElementById("result_section1").style.display == "none")
+        document.getElementById("result_section1").style.display="block";
+    else if(document.getElementById("result_section1").style.display="block")
+        document.getElementById("result_section1").style.display="none";
 
-  // if (document.getElementById("tabela_role").style.display == "none")
-  //       document.getElementById("tabela_role").style.display="block";
-  //   else if(document.getElementById("tabela_role").style.display="block")
-  //       document.getElementById("tabela_role").style.display="none";
+
+        if (document.getElementById("result_section2").style.display == "none")
+        document.getElementById("result_section2").style.display="block";
+    else if(document.getElementById("result_section2").style.display="block")
+        document.getElementById("result_section2").style.display="none";
+
+        if (document.getElementById("result_section3").style.display == "none")
+        document.getElementById("result_section3").style.display="block";
+    else if(document.getElementById("result_section3").style.display="block")
+        document.getElementById("result_section3").style.display="none";
+
+        if (document.getElementById("result_section4").style.display == "none")
+        document.getElementById("result_section4").style.display="block";
+    else if(document.getElementById("result_section4").style.display="block")
+        document.getElementById("result_section4").style.display="none";
+
+        if (document.getElementById("result_section5").style.display == "none")
+        document.getElementById("result_section5").style.display="block";
+    else if(document.getElementById("result_section5").style.display="block")
+        document.getElementById("result_section5").style.display="none";
+
+        if (document.getElementById("result_section6").style.display == "none")
+        document.getElementById("result_section6").style.display="block";
+    else if(document.getElementById("result_section6").style.display="block")
+        document.getElementById("result_section6").style.display="none";
+
+        if (document.getElementById("result_section7").style.display == "none")
+        document.getElementById("result_section7").style.display="block";
+    else if(document.getElementById("result_section7").style.display="block")
+        document.getElementById("result_section7").style.display="none";
+
+        if (document.getElementById("result_section8").style.display == "none")
+        document.getElementById("result_section8").style.display="block";
+    else if(document.getElementById("result_section8").style.display="block")
+        document.getElementById("result_section8").style.display="none";
+ 
 
   
 }
@@ -268,6 +300,8 @@ if(B<E){
   document.getElementById("punkty_1").innerHTML
   +=  "Z";
 }
+
+
 
 
 

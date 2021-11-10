@@ -761,62 +761,19 @@
         
  <h3>
      <b>Wyniki testu:</b>
-        
+     <br>
+      
+     <p id="opis_wynik">  Twój wynik opisowy to: 
 
-     <!--<div id="disp" class="col-sm-12">-->
+        <div id="punkty_1" class="col-sm-12"> 
 
-        <table id="tabela_punkty" class=".table table-striped" style="overflow-x:auto;">
-            <tr>
-                <th>Nazwa roli</th>
-                <th>Zdobyte punkty</th>
-    
-            <tr>
-                
-                
-                <td><b>NL</b></td>
-                <td id="punkty_1"></td>
-                <td id="punkty_2"></td>
-                <td id="punkty_3"></td>
-            </tr>
-    
-            <tr>
-                <td><b>NL</b></td>
-                <td id="punkty_nl"></td>
-            </tr>
-    
-            <tr>
-                <td><b>DES</b></td>
-                <td id="punkty_des"></td>
-            </tr>
-    
-            <tr>
-                <td><b>KRE</b></td>
-                <td id="punkty_kre"></td>
-            </tr>
-    
-            <tr>
-                <td><b>POSZ</b></td>
-                <td id="punkty_posz"></td>
-            </tr>
-    
-            <tr>
-                <td><b>AN</b></td>
-                <td id="punkty_an"></td>
-            </tr>
-            
-            <tr>
-                <td><b>GG</b></td>
-                <td id="punkty_gg"></td>
-            </tr>
+         
 
-            <tr>
-                <td><b>PER</b></td>
-                <td id="punkty_per"></td>
-            </tr>
-    
-        </table>
+     </p>
 
- </h3>
+
+
+  </h3>
 
             
       <br>
@@ -825,275 +782,442 @@
     <div>
 
         <button type="button" onclick="show_table()" id="button_table">
-            Ukryj/Pokaż opis wyniku
+            Ukryj/Pokaż opis wyników
         </button>
 
-
-        
-
-        <table id="result_table" class="table table-striped" style="overflow-x:auto;">
-
-            <tr>
-                <th id = "blue">Skrót</th>
-                <th id = "blue">Rola</th>
-                <th id = "blue">Niskie</th>
-                <th id = "blue">Średnie</th>
-                <th id = "blue">Wysokie</th>
-                <th id = "blue">b. Wysokie</th>
-                <th id = "blue">Opis roli grupowej</th>
-                <th id = "blue">Cechy roli</th>
-                
-            </tr>
-
-            <tr>
-                <td id = "blue"><b>ORG</b></td>
-                <td id = "blue"><b>Organizator</b></td>
-                <td>0-6 pkt</td>
-                <td>7-11 pkt</td>
-                <td>12-16 pkt</td>
-                <td>17-23 pkt</td>
-                <td>Zamienia koncepcje i plany na praktyczne działanie i realizuje ustalone plany w sposób
-                    systematyczny i efektywny. Dzięki niemu następuje praktyczne wdrożenie projektów i
-                    planów rozwiązań. Pragnie konkretów, nie lub zmienności planów.</td>
-                <td>Zrównoważony, zdyscyplinowany.</td>
-            </tr>
-
-            <tr>
-                <td id = "blue"><b>NL</b></td>
-                <td id = "blue"><b>Naturalny Lider</b></td>
-                <td>0-6 pkt</td>
-                <td>7-10 pkt</td>
-                <td>11-13 pkt</td>
-                <td>14-23 pkt</td>
-                <td>Sprawuje pieczę i kontrolę nad sposobem, w jaki grupa stara się osiągnąć cele. Potrafi
-                    efektywnie wykorzystać zasoby zespołu; rozpoznaje, gdzie tkwią zalety, a gdzie słabości
-                    grupy; potrafi wykorzystać potencjał indywidualny każdego pracownika. Charakteryzuje go
-                    raczej zdrowy rozsądek niż rozważania intelektualne, w kierowaniu nie jest agresywny.</td>
-                <td>Zrównoważony, dominujący ekstrawertyk.</td>
-            </tr>
-
-            <tr>
-                <td id = "blue"><b>DES</b></td>
-                <td id = "blue"><b>Despota</b></td>
-                <td>0-8 pkt</td>
-                <td>9-13 pkt</td>
-                <td>14-17 pkt</td>
-                <td>18-36 pkt</td>
-                <td>Kształtuje sposób, w jaki wykorzystany zostanie wysiłek grupy; kieruje swoją uwagę na
-                    ustalanie celów i priorytetów; pragnie wywierać wpływ na kształt lub wzorzec decyzji
-                    grupowej i na wynik aktywności grupowej. Chce szybko widzieć rezultaty. Rywalizuje i
-                    bywa arogancki, ale dzięki niemu „coś się rzeczywiście dzieje”.</td>
-                <td>Niespokojny, dominujący, ekstrawertyk, impulsywny,<br> łatwo się irytuje.</td>
-            </tr>
-
-            <tr>
-                <td id = "blue"><b>KRE</b></td>
-                <td id = "blue"><b>Kreator</b></td>
-                <td>0-4 pkt</td>
-                <td>5-8 <br>pkt</td>
-                <td>9-12 <br>pkt</td>
-                <td>13-29 pkt</td>
-                <td>Wysuwa nowe pomysły i strategie ze szczególnym uwzględnieniem najistotniejszych
-                    problemów i próbuje „przedzierać się” ze swoją wizją przez grupowe podejście do problemu
-                    na zasadzie konfrontacji. Może gubić szczegóły i robić błędy, a także krytykować pomysły
-                    innych. Im większy problem, tym większe wyzwanie, żeby go rozwiązać. Uważa, że
-                    wszystkie dobre pomysły z początku dziwnie wyglądają. Roztacza wokół siebie aurę
-                    „geniusza”.</td>
-                <td>Dominujący, inteligentny, introwertyk.</td>
-            </tr>
-
-            <tr>
-                <td id = "blue"><b>POSZ</b></td>
-                <td id = "blue"><b>Poszukiwacz</b></td>
-                <td>0-6 pkt</td>
-                <td>7-9 <br>pkt</td>
-                <td>10-11 pkt</td>
-                <td>12-21 pkt</td>
-                <td>Szuka środków do realizacji zadań. Bada, analizuje i przytacza informacje na temat
-                    pomysłów, stanu wiedzy i działań na zewnątrz grupy; nawiązuje kontakty zewnętrzne, które
-                    mogą być użyteczne dla zespołu; potrafi przewidzieć niezbędne negocjacje. Popiera
-                    innowacje i jest dobrym improwizatorem.</td>
-                <td>Zrównoważony, dominujący, ekstrawertyk.</td>
-            </tr>
-
-            <tr>
-                <td id = "blue"><b>AN</b></td>
-                <td id = "blue"><b>Analityk</b></td>
-                <td>0-5 pkt</td>
-                <td>6-9 <br>pkt</td>
-                <td>10-12 pkt</td>
-                <td>13-19 pkt</td>
-                <td>Analizuje problem, ocenia pomysły i sugestie, dzięki czemu grupa startuje z lepiej
-                    przygotowanej pozycji do podjęcia wyważonej decyzji. Jest najbardziej obiektywny,
-                    bezstronny i niezaangażowany emocjonalnie, lubi mieć czas do namysłu. Brak mu
-                    entuzjazmu, ale jego spokój pozwala na podjęcie wyważonych decyzji.</td>
-                <td>Inteligentny, zrównoważony, introwertyk.</td>
-            </tr>
-
-            <tr>
-                <td id = "blue"><b>GG</b></td>
-                <td id = "blue"><b>Gracz Grupowy</b></td>
-                <td>0-8 pkt</td>
-                <td>9-12 pkt</td>
-                <td>13-16 pkt</td>
-                <td>17-25 pkt</td>
-                <td>Wspiera członków grupy, podbudowuje morale grupy, jeśli są jakieś niedociągnięcia i
-                    braki. Potrafi zapobiegać konfliktom, kształtuje „ducha” zespołu. Może jego wkład nie jest
-                    zbyt wyraźny, ale nieoceniona jest jego lojalność i oddanie wobec grupy, nie lubi konfliktów.</td>
-                <td>Ekstrawertyk, zrównoważony,<br> niskie pragnienie dominacji i rywalizacji,<br> zdolność
-                    empatii.</td>
-            </tr>
-
-            <tr>
-                <td id = "blue"><b>PER</b></td>
-                <td id = "blue"><b>Perfekcjonista</b></td>
-                <td>0-3 pkt</td>
-                <td>4-6 <br>pkt</td>
-                <td>7-9 <br>pkt</td>
-                <td>10-17 pkt</td>
-                <td>Nastawiony na konkretny efekt — na zakończenie zadania w określonym czasie i
-                    zapewnienie mu jak najwyższego standardu wykonania. Może być trudny w kontaktach,
-                    ponieważ jest wrogiem przypadku i grzęźnie w szczegółach, które nie są najistotniejsze dla
-                    ukończenia zadania. Zawsze świadomy celu.</td>
-                <td>Niespokojny, zdyscyplinowany, introwertyk.</td>
-            </tr>
+        <br>
+        <br>
 
 
+        <div id="results"> 
 
-        </table>
 
-        <div>
-            <h3>
-                <b>Jakie osoby warto mieć w zespole?</b>
-            </h3>
+            <div id="result_section1">
 
-            <table id = "tabela_role" style="overflow-x:auto;">
-                <tr>
-                    <th>Rola</th>
-                    <th>Typowe cechy</th>
-                    <th>Pozytywne strony</th>
-                    <th>Możliwe słabości</th>
-                    
-                </tr>
+                <h4 id = "nazwa_typu">WSW - DYREKTOR</h4>
+                <br>
+                CECHY DLA TYPU WSW: 
+                <br> <div id = "greenfont">WYDAJNOŚĆ - STABILIZACJA - NAGRODY WEWNĘTRZNE</div>
+             
+                <p>
+                    <div id="greenfont">DALSZY OPIS:</div>
+                    Dyrektorzy to osoby myślące strategicznie, dzięki którym plany są realizowane.
+                    Dostrzegają szczegóły. Mają energię potrzebną do wykonywania projektów.
+                    Praktyczni i odpowiedzialni. Natychmiast przechodzą do sedna sprawy. Są
+                    nastawieni na wykonywane zadanie. Świetnie sobie radzą z rozwiązywaniem
+                    problemów. Struktury, grafiki i procedury to ich specjalność. Koncentrują się na
+                    osiąganiu celu i wynikach. Doskonale sprawdzają się w firmach, które dają im
+                    swobodę działania. Wiedzą, że dużo wnoszą do firmy, za co chcą być szczerze
+                    docenieni. Kierują się misją i pragną wnosić pozytywny wkład.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO MOTYWUJE:</div>
+                    Wolność od niepotrzebnych ograniczeń, możliwość
+                    zarządzania własnym czasem, uznanie kolegów, możność rozwoju, jasna struktura,
+                    sprecyzowane, pozytywne uwagi.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO DEMOTYWUJE:</div>
+                    Niejasne cele, leniwi współpracownicy, „myślenie
+                    grupowe”, brak możliwości samodzielnego zarządzania czasem i znajdowania
+                    własnych rozwiązań.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">WSKAZÓWKI JAK REALIZOWAĆ POSTAWIONE CELE:</div><br>
+    
+                        1. Wyznaczaj konkretne i zarazem ambitne cele. Inne nie inspirują
+                            Dyrektorów.<br> <br>
+                        2. Wyzwania dodają ci energii. Kiedy tylko to możliwe, rywalizuj o istotne dla
+                        Cebie kwestie. Na przykład, jeśli chcesz popracować nad swoją figurą,
+                        przygotowuj się do maratonu na rzecz swojej ulubionej organizacji
+                        charytatywnej.<br><br>
+                        3. Konsekwencja i odpowiedzialność pomogą ci zrealizować wytyczone cele.
+                        Nakreśl plan zakładający wykonywanie stałych czynności, które z każdym
+                        dniem będą cię zbliżać do celu. Realizuj go. Korzystanie z narzędzi typu
+                        arkusze kalkulacyjne i kalendarze pomoże co lepiej zorganizować pracę, za
+                        którą ponosisz odpowiedzialność. Będą Cię też mobilizowały do dalszych
+                        działań.
+                </p>
+    
+            </div>
+            
+    
+            <div id="result_section2">
+    
+                <h4 id = "nazwa_typu">WZW - WIZJONER</h4>
+                <br>
+                CECHY DLA TYPU WZW: 
+                <br> <div id = "greenfont">WYDAJNOŚĆ - ZMIANY - NAGRODY WEWNĘTRZNE</div>
+             
+                <p>
+                    <div id="greenfont">DALSZY OPIS:</div>
+                    Wizjonerzy są wytrwali, energiczni i pewni siebie. Potrafią kierować ludźmi i
+                    projektami. Wykazują się silnym potencjałem przywódczym i szybko reagują w
+                    kryzysowej sytuacji. Myślą kreatywnie i zarażają innych swoimi pomysłami. Lubią
+                    pracować nad kilkoma rzeczami naraz i brać udział w rozważaniu alternatywnych
+                    pomysłów. Wizjonerzy są dalekowzroczni i pomysłowi. Lubią zmiany. Służy im
+                    presja. Są zdolni zmienić bieg i zawrócić niemal w miejscu. Z pewnością siebie
+                    przyswajają nowe umiejętności. Pragną nowych wyzwań i możliwości rozwoju
+                    osobistego. Muszą wiedzieć, że ich praca ma znaczenie, oraz marzą o tym, żeby
+                    „pójść tam, gdzie jeszcze nikt nigdy nie był”.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO MOTYWUJE:</div>
+                    Inspirujące środowisko pracy, możliwość inicjowania
+                    nowych pomysłów, szacunek ze strony współpracowników, uznanie za wykonaną
+                    pracę i silne poczucie misji.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO DEMOTYWUJE:</div>
+                    Sztywna struktura, monotonny plan zajęć,
+                    opóźnienia, pochłaniające czas detale i biurokracja.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">WSKAZÓWKI JAK REALIZOWAĆ POSTAWIONE CELE:</div><br>
+    
+                    1. Koniecznie musisz mieć możliwość wyboru. Zrób listę 12 sposobów na
+                    osiągnięcie celu. Potem wszystko wymieszaj. Zaczerpnij trochę z każdej
+                    metody. Wizjonerów szybko nudzi rutyna.<br><br>
+                    2. Stwórz konkretny plan realizacji swoich założeń. Jeśli coś się w twoim
+                    przypadku nie sprawdza, nie zmuszaj się, wyeliminuj to. Znajdź lepszy
+                    sposób – coś bardziej przyjemnego i ekscytującego.<br><br>
+                    3. Szczegółowo opisz, dlaczego twój cel jest dla ciebie ważny. W jaki sposób
+                    ty i inni skorzystacie na jego osiągnięciu. Jakie będą konsekwencje jego
+                    niezrealizowania?
+                </p>
+    
+            </div>
+    
+    
+            <div id="result_section3">
+    
+                <h4 id = "nazwa_typu">WSZ - WÓDZ</h4>
+                <br>
+                CECHY DLA TYPU WSZ: 
+                <br> <div id = "greenfont">WYDAJNOŚĆ - STABILIZACJA - NAGRODY ZEWNĘTRZNE</div>
+             
+                <p>
+                    <div id="greenfont">DALSZY OPIS:</div>
+                    Wodzów cechuje silne pragnienie osiągania wyników, połączone z potrzebą
+                    dokładności. Są zdecydowani i nieugięci. Charakteryzuje ich poczucie niezależności
+                    i umiejętność wydajnej pracy bez nadzoru. Potrafią szybko podejmować decyzje,
+                    najlepiej, jeśli znają wszystkie fakty. Lubią władzę pozwalającą im na wytyczanie
+                    własnych planów. Mają dobre umiejętności organizacyjne i są w stanie z łatwością
+                    tworzyć systemy i procedury. Wymierne korzyści sprawiają, że wodzowie czują się
+                    ważni i doceniani. Metodycznie dążą do celów przynoszących znaczne, konkretne
+                    nagrody. Są to osoby skoncentrowane na osiąganiu określonych rezultatów.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO MOTYWUJE:</div>
+                        Niezależność, publiczne uznanie, szczególne przywileje,
+                        wolność od zbędnej kontroli, możliwość urządzania swojego otoczenia według
+                        własnych upodobań, czas do namysłu, swoboda działania, uznanie ich szczególnych
+                        umiejętności i osiągnięć.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO DEMOTYWUJE:</div>
+                    Sztywność poglądów czy kontrola ze strony
+                    przełożonych i autorytetów, nieefektywne systemy czy ludzie.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">WSKAZÓWKI JAK REALIZOWAĆ POSTAWIONE CELE:</div><br>
+    
+                    1. Niezbędna jest konsekwencja. Lepiej jest zrobić choć troszkę, ale
+                    codziennie, aby zrealizować swój cel, niż wiecznie zaczynać od nowa.<br><br>
+                    2. Jasno określ swój cel. Podziel go na wykonalne części i wyznacz ostateczny
+                    termin realizacji.<br><br>
+                    3. Od samego początku przyznawaj sobie ważne i pożądane nagrody za
+                    stopniowo osiągane cele.
+                </p>
+    
+            </div>
+           
+    
+            <div id="result_section4">
+    
+                <h4 id = "nazwa_typu">WZZ - MISTRZ</h4>
+                <br>
+                CECHY DLA TYPU WZZ: 
+                <br> <div id = "greenfont">WYDAJNOŚĆ - ZMIANY - NAGRODY ZEWNĘTRZNE</div>
+             
+                <p>
+                    <div id="greenfont">DALSZY OPIS:</div>
+                    Mistrzowie lubią wyzwania i uwielbiają wygrywać. Są czarującymi i entuzjastycznymi
+                    liderami. Mistrzowie mają wrodzoną zdolność przekonywania innych do swoich racji.
+                    Znajdowanie się w centrum uwagi nie stanowi dla nich problemu. Potrafią dobrze
+                    współpracować, przedstawiając też swoje pomysły. Najczęściej są ujmujący i
+                    charyzmatyczni. Pomimo przeszkód pozornie nie do pokonania doprowadzają rzeczy do
+                    końca. Trudności sprawiają nawet, że mistrzowie postrzegają zadania jako bardziej
+                    interesujące. Szybko podejmują decyzje i czasami mogą okazywać zniecierpliwienie wobec
+                    osób, którym to przychodzi wolniej. Jako rzetelni negocjatorzy mistrzowie są skłonni iść na
+                    kompromis, jeśli wymaga tego ukończenie zadania. Posiadają wrodzoną zdolność
+                    pociągania za sobą innych.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO MOTYWUJE:</div>
+                    Ambitne zlecenia, możliwość podejmowania decyzji,
+                    opłacalność, wolność od nadzoru i nadmiernej kontroli, możliwości awansu,
+                    wyznaczone terminy, skalkulowane ryzyko i popularność.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO DEMOTYWUJE:</div>
+                    Ścisła kontrola, brak możliwości zarządzania własnym
+                    czasem i projektami, przewlekłe analizy i rozważania nieprowadzące do
+                    konstruktywnych działań.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">WSKAZÓWKI JAK REALIZOWAĆ POSTAWIONE CELE:</div><br>
+    
+                    1. Mistrzowie lubią być zapracowani, dlatego też bardzo ważne jest
+                        wyodrębnienie miejsca w grafiku wyłącznie na czynności konieczne do
+                        realizacji założonych celów. Musisz zaznaczyć konkretne godziny, w
+                        których będziesz pracował nad wyznaczonymi celami.<br><br>
+                        2. Współzawodnictwo i stosowne nagrody są dla mistrzów silnymi czynnikami
+                        motywacyjnymi. Wymyśl konkurs dla podobnych sobie ludzi sukcesu,
+                        dążących do realizacji tego samego cele. Kto pierwszy osiągnie cel,
+                        wygrywa nagrodę.<br><br>
+                        3. Przebieg wykonywanych zadań musi sprawiać ci przyjemność. Poświęć
+                        trochę czasu na znalezienie atrakcyjnych metod osiągania celów.
+                </p>
+    
+            </div>
+           
+    
+            <div id="result_section5">
+    
+                <h4 id = "nazwa_typu">KSW - OPIEKUN</h4>
+                <br>
+                CECHY DLA TYPU KSW: 
+                <br> <div id = "greenfont">KONTAKTY - STABILIZACJA - NAGRODY WEWNĘTRZNE</div>
+             
+                <p>
+                    <div id="greenfont">DALSZY OPIS:</div>
+                    Opiekunowie są praktyczni, godni zaufania i lojalni. Dbają zarówno o pracowników,
+                    jak i o szczegóły przedsięwzięć. Są urodzonymi przełożonymi. Świetnie się
+                    sprawdzają, pomagając innym odnieść sukcesy i walczą o najsłabsze jednostki.
+                    Mają metodyczne podejście do pracy i lubią znać fakty, zanim podejmą działania. Z
+                    respektem odnoszą się do zwierzchników i struktury organizacyjnej. Odznaczają się
+                    umiejętnością wprowadzenia procedur z zachowaniem troski o ludzi i projekty.
+                    Cechuje ich etyka pracownicza. Dla tego typu ludzi ważny jest jasno zdefiniowany
+                    cel, do którego będą sumiennie dążyć. Najistotniejsza jest dla nich nagroda
+                    psychologiczna. Muszą dobrze czuć się z tym, co robią i mieć świadomość, że ich
+                    praca wywiera pozytywny wpływ na innych.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO MOTYWUJE:</div>
+                    Fakty i informacje, szacunek kolegów, szczera
+                    wdzięczność, prywatne uznanie, osobista pozytywna ocena, inspirujące środowisko
+                    pracy, lubiani współpracownicy, jasno zdefiniowane cele, poczucie pomyślnie
+                    wykonanego zadania i czas na zastanowienie się i planowanie.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO DEMOTYWUJE:</div>
+                        Brak stabilizacji, zabieranie czasu wolnego czy
+                        przeznaczonego dla rodziny, dostrzegana nierówność i konieczność
+                        przeprowadzenia nagłych zmian.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">WSKAZÓWKI JAK REALIZOWAĆ POSTAWIONE CELE:</div><br>
+    
+                    1. Opiekunowie zniechęcają się na myśl o wielkich założeniach. Z tego
+                    powodu twoje aspiracje muszą być realistyczne. Wyznaczaj sobie osiągalne
+                    cele i rozsądne ramy czasowe.<br><br>
+                    2. Bądź dla siebie wyrozumiały. Nie oczekuj perfekcyjności. Powinieneś raczej
+                    wymagać systematycznych postępów.<br><br>
+                    3. Zaangażuj innych. Zrób listę osób, organizacji i innych źródeł, z których
+                    możesz uzyskać pomoc w realizacji swojego celu.
+                </p>
+    
+            </div>
+    
+            <div id="result_section6">
+    
+                <h4 id = "nazwa_typu">KZW - SOJUSZNIK</h4>
+                <br>
+                CECHY DLA TYPU KZW: 
+                <br> <div id = "greenfont">KONTAKTY - ZMIANY - NAGRODY WEWNĘTRZNE</div>
+             
+                <p>
+                    <div id="greenfont">DALSZY OPIS:</div>
+                    Sojusznicy są troskliwi i kreatywni. Cieszą się życiem i pielęgnują związki z ludźmi.
+                    Są towarzyscy, przyjaźni i bardzo lubiani. Charakteryzują się przedsiębiorczością i
+                    pomysłowością. Potrafią pójść na kompromis jeśli wymaga tego ukończenie
+                    zadania. Świetnie pracują w zespole. Potrafią rozbudzić w innych ukryte talenty.
+                    Dzięki swojemu ciepłu i entuzjazmowi łączą troskę o innych z rozwojem osobistym.
+                    Podchodzą do problemów w sposób praktyczny i indywidualny. Mają wrodzoną
+                    zdolność znajdowania rozwiązań, w których każda strona wygrywa. Sojusznicy
+                    cenią sobie to, co jest naprawdę ważne i pragną wnieść pozytywny wkład do
+                    społeczeństwa. Z nimi każda impreza to świetna zabawa. Są przy tym oddanymi
+                    partnerami, gdyż potrafią łączyć lojalność z zamiłowaniem do przygód.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO MOTYWUJE:</div>
+                    Szczere uznanie za dobrze wykonaną pracę,
+                    możliwość rozwoju zawodowego, towarzyscy współpracownicy, praca w zespole,
+                    nowe doświadczenia i inspirujące środowisko pracy.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO DEMOTYWUJE:</div>
+                    Odizolowanie, sztywne grafiki, napięte terminy,
+                    tłumienie kreatywności, dezaprobata i konflikty.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">WSKAZÓWKI JAK REALIZOWAĆ POSTAWIONE CELE:</div><br>
+    
+                    1. Jesteś osobą zorientowaną na innych ludzi, wobec tego w twoim przypadku
+                    najlepszym sposobem będzie współpraca z partnerem lub zespołem, który
+                    ma takie same założenia. Znajdź, lub załóż grupę wsparcia, która będzie cię
+                    zagrzewać do boju, aż osiągniesz swój cel.<br><br>
+                    2. Doprowadzenie rzeczy do końca nie jest twoją mocną stroną. Musisz
+                    przyjąć odpowiedzialność za realizację zadania i codziennie wykonywać
+                    choćby małą czynność zbliżającą cię do mety.<br><br>
+                    3. Poświęć trochę czasu na zastanowienie, dlaczego twój cel jest ważny.
+                    Wypisz powody, dla których chcesz go zrealizować i spróbuj się do nich
+                    odnieść. Osoby o twoim typie motywacji inspiruje odpowiedź na pytanie
+                    „dlaczego” a nie „jak”.
+    
+            </div>
+    
+            <div id="result_section7">
+    
+                <h4 id = "nazwa_typu">KSZ - UDOSKONALACZ</h4>
+                <br>
+                CECHY DLA TYPU KSZ: 
+                <br> <div id = "greenfont">KONTAKTY - STABILIZACJA - NAGRODY ZEWNĘTRZNE</div>
+             
+                <p>
+                    <div id="greenfont">DALSZY OPIS:</div>
+                        Udoskonalacze myślą systematycznie i cenią sobie precyzję. Potrafią ogarnąć cały
+                        obraz, jednocześnie skupiając się na szczegółach. Osoby takie są sumienne i
+                        zdyscyplinowane. Wspierają i szanują innych. Ich osobiste i praktyczne podejście
+                        sprawia, że są nastawieni na rodzinę. Mają jasno zdefiniowane poczucie dobra i zła,
+                        przy czym są niezwykle lojalni. Preferują demokratyczny styl zarządzania i
+                        wymagają od innych, żeby postępowali według zasad. Można im zaufać.
+                        Sprawiedliwa płaca i szczere uznanie sprawiają, że czują się doceniani. Podejmują
+                        przemyślane decyzje i starają się, żeby nie wpływały one negatywnie na innych.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO MOTYWUJE:</div>
+                    Dostęp do wszystkich informacji i dostateczna ilość
+                    czasu, żeby je przeanalizować, kompetentni członkowie zespołu, uznanie osób
+                    wyżej postawionych, szczególne przywileje, wolność od kontroli, szczery szacunek.
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO DEMOTYWUJE:</div>
+                    Napięte terminy, zbyt wiele przydzielonych do
+                    tego samego zadania, nagłe zmiany, zabieranie czasu wolnego czy przeznaczonego
+                    dla rodziny, dostrzegana nierówność.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">WSKAZÓWKI JAK REALIZOWAĆ POSTAWIONE CELE:</div><br>
+    
+                    1. Twój typ wręcz rozkwita pod okiem mentora. Porozmawiaj z osobami,
+                    które już osiągnęły to, do czego dążysz i dowiedz się, jak to zrobiły. Poproś
+                    je o pomoc i radę, jeśli po drodze napotkasz problemy.<br><br>
+                    2. Nie podejmuj ważnych kroków bez należytego zastanowienia. Poszukaj
+                    najlepszej drogi do osiągnięcia swojego celu. Istnieje najlepsza droga –
+                    znajdź ją.<br><br>
+                    3. Każdego tygodnia odkładaj pewną sumę pieniędzy, aby wynagrodzić się za
+                    wykonanie zadania na czas.
+    
+            </div>
+            
+            <div id="result_section8">
+    
+                <h4 id = "nazwa_typu">KZZ - BADACZ</h4>
+                <br>
+                CECHY DLA TYPU KZZ: 
+                <br> <div id = "greenfont">KONTAKTY - ZMIANY - NAGRODY ZEWNĘTRZNE</div>
+             
+                <p>
+                    <div id="greenfont">DALSZY OPIS:</div>
+                    Badacze są energiczni, podejmują spontaniczne decyzje, uwielbiają przygody.
+                    Wyróżniają się spostrzegawczością, wnikliwością, świetnie rozumieją intencje
+                    innych osób. Ich ciepło, takt i życzliwość sprawiają, że są dobrymi psychologami.
+                    Zachęcając i doceniając innych, potrafią rozbudzić w nich ukryte talenty.
+                    Kreatywnie rozwiązują problemy i potrafią znajdować nietuzinkowe wyjścia z
+                    trudnej sytuacji. Są zwolennikami współpracy, do której umiejętnie zachęcają.
+                    Cenią pracowitość, pragnąc zarazem, aby praca dawała przyjemność i satysfakcję.
+                    Lubią zawody, dzięki którym mogą przyswajać nowe umiejętności i poznawać
+                    nowych ludzi.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO MOTYWUJE:</div>
+                    Inspirujące znajomości, możliwość rozwoju osobistego i
+                    awansu w obrębie firmy, swobodny wybór sposobu wykonywania zadania,
+                    szacunek, dobre wynagrodzenie i premie.
+                </p>
+    
+                <p>
+                    <div id="greenfont">CO DEMOTYWUJE:</div>
+                    Rutyna, biurokracja, odizolowanie, dezaprobata i
+                    tłumienie kreatywności.
+    
+                </p>
+    
+                <p>
+                    <div id="greenfont">WSKAZÓWKI JAK REALIZOWAĆ POSTAWIONE CELE:</div><br>
+    
+                    1. Koleżeństwo jest dla ciebie kluczową kwestią. Angażowanie innych osób
+                    pomoże ci wytrwać w dążeniu do celu. Nawet najgorsze zadania stają się
+                    niezłą zabawą, jeśli wykonujesz je z ludźmi, których lubisz.<br><br>
+                    2. Badacze muszą mieć możliwość wyboru. Zawsze istnieje kilka sposobów
+                    osiągnięcia celu. Stwórz listę metod, które sprawdziły się w przypadku
+                    innych osób i postaraj się je wykorzystać.<br><br>
+                    3. Cały czas się nagradzaj. Świętuj najmniejsze sukcesy, a kiedy osiągniesz cel,
+                    nie żałuj pieniędzy na dużą nagrodę.
+    
+            </div>
 
-                <tr>
-                    <td><b>Organizator</b></td>
-                    <td>Konserwatywny,obowiązkowy,praktyczny.</td>
-                    <td>Zdolności organizacyjne,zdrowy rozsądek,samokontrola.</td>
-                    <td>Brak plastyczności,
-                        możliwe
-                        powątpiewanie w
-                        nowe pomysły i
-                        zmiany.</td>
-                </tr>
 
-                <tr>
-                    <td><b>Naturalny Lider</b></td>
-                    <td>Spokojny, pewny
-                        siebie,
-                        zdyscyplinowany.</td>
-                    <td>Zdolność do dostrzegania
-                        potencjału tkwiącego w
-                        ludziach i silne skupienie
-                        na celach.</td>
-                    <td>Przeciętny, jeśli
-                        chodzi o zdolności
-                        intelektualne i
-                        twórcze.</td>
-                </tr>
 
-                <tr>
-                    <td><b>Despota</b></td>
-                    <td>Bardzo napięty,
-                        dynamiczny,
-                        stawiający wyzwania.</td>
-                    <td>Pragnienie i gotowość
-                        przezwyciężenia inercji,
-                        braku efektywności i
-                        samozadowolenia.</td>
-                    <td>Skłonność do
-                        prowokowania,
-                        irytacji i niepokoju.</td>
-                </tr>
-
-                <tr>
-                    <td><b>Kreator</b></td>
-                    <td>Indywidualista,
-                        poważny,
-                        niekonwencjonalny.</td>
-                    <td>Geniusz, wyobraźnia,
-                        intelekt, wiedza.</td>
-                    <td>Bujanie w obłokach,
-                        możliwe pomijanie
-                        praktycznych
-                        szczegółów.</td>
-                </tr>
-
-                <tr>
-                    <td><b>Poszukiwacz</b></td>
-                    <td>Ekstrawertyk,
-                        entuzjasta, ciekawy
-                        świata,
-                        komunikatywny.</td>
-                    <td>Zdolność do
-                        kontaktowania się z
-                        ludźmi i odkrywania tego,
-                        co nowe, Umiejętność
-                        reagowania na wyzwania.</td>
-                    <td>Szybko traci
-                        zainteresowanie, gdy
-                        mija pierwsza
-                        fascynacja.</td>
-                </tr>
-
-                <tr>
-                    <td><b>Analityk</b></td>
-                    <td>Trzeźwy, bez emocji,
-                        ostrożny.</td>
-                    <td>Umiejętność oceny,
-                        dyskrecja, praktyczność i
-                        nie bawienie się w
-                        sentymenty.</td>
-                    <td>Brak umiejętności
-                        inspiracji i zdolności
-                        do motywowania
-                        innych.</td>
-                </tr>
-
-                <tr>
-                    <td><b>Gracz grupowy</b></td>
-                    <td>Zorientowany na
-                        społeczną stronę
-                        pracy, łagodny,
-                        wrażliwy.</td>
-                    <td>Umiejętność wczuwania
-                        się w ludzi i w sytuacje,
-                        umiejętność wzbudzania
-                        „ducha grupy”.</td>
-                    <td>Brak zdecydowania
-                        w sytuacjach
-                        kryzysowych.</td>
-                </tr>
-                
-                <tr>
-                    <td><b>Perfekcjonista</b></td>
-                    <td>Staranny,
-                        uporządkowany,
-                        sumienny,
-                        niespokojny.</td>
-                    <td>Zdolność do
-                        doprowadzenia do skutku,
-                        perfekcjonizm.</td>
-                    <td>Skłonność do
-                        martwienia się
-                        drobiazgami,
-                        napięcie.</td>
-                </tr>
-                
-
-            </table>
 
         </div>
+        
+        
 
 
     </div>
