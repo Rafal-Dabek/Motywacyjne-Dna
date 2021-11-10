@@ -197,6 +197,13 @@ function show_table()
 
 function done(){
   var mentor=0;
+  var A=0;
+  var B=0;
+  var C=0;
+  var D=0;
+  var E=0;
+  var F=0;
+
   var coach=0;
   var doradca=0;
   var ele = document.getElementsByTagName('input');
@@ -205,7 +212,7 @@ function done(){
        
 
 
-        document.getElementById("disp").innerHTML = "";
+       // document.getElementById("disp").innerHTML = "";
         var ele = document.getElementsByTagName('input');
         var d=[];
         for(i = 0; i < ele.length; i++) {
@@ -228,28 +235,41 @@ function done(){
 
   var p=Array.from(d);
  
-  
-coach=parseInt(p[2])+parseInt(p[4])+parseInt(p[7])+parseInt(p[9])+parseInt(p[14])+parseInt(p[15])+parseInt(p[18])+parseInt(p[22])+parseInt(p[25])+parseInt(p[28]);
-mentor=parseInt(p[0])+parseInt(p[5])+parseInt(p[6])+parseInt(p[11])+parseInt(p[12])+parseInt(p[17])+parseInt(p[20])+parseInt(p[23])+parseInt(p[24])+parseInt(p[29]);
-doradca=parseInt(p[1])+parseInt(p[3])+parseInt(p[8])+parseInt(p[10])+parseInt(p[13])+parseInt(p[16])+parseInt(p[19])+parseInt(p[21])+parseInt(p[26])+parseInt(p[27]);
-console.log(mentor)
+for(i=0;i<d.length;i++){
+if(d[i]=="A")A++; 
+if(d[i]=="B")B++; 
+if(d[i]=="C")C++; 
+if(d[i]=="D")D++;
+if(d[i]=="E")E++; 
+if(d[i]=="F")F++;
 
-if(isNaN(coach) || isNaN(mentor) || isNaN(doradca))
-{
-  alert ("Wszystkie pola muszą być uzupełnione!");
+}  
+if(A>C){
+  document.getElementById("punkty_1").innerHTML
+  +=  "W";
 }
-else
-{
-  document.getElementById("disp").innerHTML
-  +=  " Coach: "
-  + coach + "<br>"
-  
-    + " Mentor: "
-  + mentor + "<br>"
-  
-   + " Doradca: "
-  + doradca + "<br>";
+if(A<C){
+  document.getElementById("punkty_1").innerHTML
+  +=  "K";
 }
+if(D>F){
+  document.getElementById("punkty_1").innerHTML
+  +=  "S";
+}
+if(D<F){
+  document.getElementById("punkty_1").innerHTML
+  +=  "Z";
+}
+if(B>E){
+  document.getElementById("punkty_1").innerHTML
+  +=  "W";
+}
+if(B<E){
+  document.getElementById("punkty_1").innerHTML
+  +=  "Z";
+}
+
+
 
 
 
@@ -272,542 +292,7 @@ function reset(id) {
 } 
 
 
-function done3()
-{
-  var org = 0;
-  var nl = 0;
-  var des = 0;
-  var kre = 0;
-  var posz = 0;
-  var an = 0;
-  var gg = 0;
-  var per = 0;
 
-  //org
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("0_1_"+i.toString()).checked == true)
-    {
-      org += parseInt(document.getElementById("0_1_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("1_1_"+i.toString()).checked == true)
-    {
-      org += parseInt(document.getElementById("1_1_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("2_1_"+i.toString()).checked == true)
-    {
-      org += parseInt(document.getElementById("2_1_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("3_1_"+i.toString()).checked == true)
-    {
-      org += parseInt(document.getElementById("3_1_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("4_1_"+i.toString()).checked == true)
-    {
-      org += parseInt(document.getElementById("4_1_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("5_1_"+i.toString()).checked == true)
-    {
-      org += parseInt(document.getElementById("5_1_"+i.toString()).value)
-    }
-  }
-
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("6_1_"+i.toString()).checked == true)
-    {
-      org += parseInt(document.getElementById("6_1_"+i.toString()).value)
-    }
-  }
-
-
-//nl
-  
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("0_2_"+i.toString()).checked == true)
-    {
-      nl += parseInt(document.getElementById("0_2_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("1_2_"+i.toString()).checked == true)
-    {
-      nl += parseInt(document.getElementById("1_2_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("2_2_"+i.toString()).checked == true)
-    {
-      nl += parseInt(document.getElementById("2_2_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("3_2_"+i.toString()).checked == true)
-    {
-      nl += parseInt(document.getElementById("3_2_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("4_2_"+i.toString()).checked == true)
-    {
-      nl += parseInt(document.getElementById("4_2_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("5_2_"+i.toString()).checked == true)
-    {
-      nl += parseInt(document.getElementById("5_2_"+i.toString()).value)
-    }
-  }
-
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("6_2_"+i.toString()).checked == true)
-    {
-      nl += parseInt(document.getElementById("6_2_"+i.toString()).value)
-    }
-  }
-
-
-  //des
-  
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("0_3_"+i.toString()).checked == true)
-    {
-      des += parseInt(document.getElementById("0_3_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("1_3_"+i.toString()).checked == true)
-    {
-      des += parseInt(document.getElementById("1_3_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("2_3_"+i.toString()).checked == true)
-    {
-      des += parseInt(document.getElementById("2_3_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("3_3_"+i.toString()).checked == true)
-    {
-      des += parseInt(document.getElementById("3_3_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("4_3_"+i.toString()).checked == true)
-    {
-      des += parseInt(document.getElementById("4_3_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("5_3_"+i.toString()).checked == true)
-    {
-      des += parseInt(document.getElementById("5_3_"+i.toString()).value)
-    }
-  }
-
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("6_3_"+i.toString()).checked == true)
-    {
-      des += parseInt(document.getElementById("6_3_"+i.toString()).value)
-    }
-  }
-
-  
-  //kre
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("0_4_"+i.toString()).checked == true)
-    {
-      kre += parseInt(document.getElementById("0_4_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("1_4_"+i.toString()).checked == true)
-    {
-      kre += parseInt(document.getElementById("1_4_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("2_4_"+i.toString()).checked == true)
-    {
-      kre += parseInt(document.getElementById("2_4_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("3_4_"+i.toString()).checked == true)
-    {
-      kre += parseInt(document.getElementById("3_4_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("4_4_"+i.toString()).checked == true)
-    {
-      kre += parseInt(document.getElementById("4_4_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("5_4_"+i.toString()).checked == true)
-    {
-      kre += parseInt(document.getElementById("5_4_"+i.toString()).value)
-    }
-  }
-
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("6_4_"+i.toString()).checked == true)
-    {
-      kre += parseInt(document.getElementById("6_4_"+i.toString()).value)
-    }
-  }
-
-
-  //posz
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("0_5_"+i.toString()).checked == true)
-    {
-      posz += parseInt(document.getElementById("0_5_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("1_5_"+i.toString()).checked == true)
-    {
-      posz += parseInt(document.getElementById("1_5_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("2_5_"+i.toString()).checked == true)
-    {
-      posz += parseInt(document.getElementById("2_5_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("3_5_"+i.toString()).checked == true)
-    {
-      posz += parseInt(document.getElementById("3_5_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("4_5_"+i.toString()).checked == true)
-    {
-      posz += parseInt(document.getElementById("4_5_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("5_5_"+i.toString()).checked == true)
-    {
-      posz += parseInt(document.getElementById("5_5_"+i.toString()).value)
-    }
-  }
-
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("6_5_"+i.toString()).checked == true)
-    {
-      posz += parseInt(document.getElementById("6_5_"+i.toString()).value)
-    }
-  }
-
-
-
-  //an
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("0_6_"+i.toString()).checked == true)
-    {
-      an += parseInt(document.getElementById("0_6_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("1_6_"+i.toString()).checked == true)
-    {
-      an += parseInt(document.getElementById("1_6_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("2_6_"+i.toString()).checked == true)
-    {
-      an += parseInt(document.getElementById("2_6_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("3_6_"+i.toString()).checked == true)
-    {
-      an += parseInt(document.getElementById("3_6_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("4_6_"+i.toString()).checked == true)
-    {
-      an += parseInt(document.getElementById("4_6_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("5_6_"+i.toString()).checked == true)
-    {
-      an += parseInt(document.getElementById("5_6_"+i.toString()).value)
-    }
-  }
-
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("6_6_"+i.toString()).checked == true)
-    {
-      an += parseInt(document.getElementById("6_6_"+i.toString()).value)
-    }
-  }
-  
-
-  //gg
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("0_7_"+i.toString()).checked == true)
-    {
-      gg += parseInt(document.getElementById("0_7_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("1_7_"+i.toString()).checked == true)
-    {
-      gg += parseInt(document.getElementById("1_7_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("2_7_"+i.toString()).checked == true)
-    {
-      gg += parseInt(document.getElementById("2_7_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("3_7_"+i.toString()).checked == true)
-    {
-      gg += parseInt(document.getElementById("3_7_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("4_7_"+i.toString()).checked == true)
-    {
-      gg += parseInt(document.getElementById("4_7_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("5_7_"+i.toString()).checked == true)
-    {
-      gg += parseInt(document.getElementById("5_7_"+i.toString()).value)
-    }
-  }
-
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("6_7_"+i.toString()).checked == true)
-    {
-      gg += parseInt(document.getElementById("6_7_"+i.toString()).value)
-    }
-  }
-
-
-  //per
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("0_8_"+i.toString()).checked == true)
-    {
-      per += parseInt(document.getElementById("0_8_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("1_8_"+i.toString()).checked == true)
-    {
-      per += parseInt(document.getElementById("1_8_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("2_8_"+i.toString()).checked == true)
-    {
-      per += parseInt(document.getElementById("2_8_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("3_8_"+i.toString()).checked == true)
-    {
-      per += parseInt(document.getElementById("3_8_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("4_8_"+i.toString()).checked == true)
-    {
-      per += parseInt(document.getElementById("4_8_"+i.toString()).value)
-    }
-  }
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("5_8_"+i.toString()).checked == true)
-    {
-      per += parseInt(document.getElementById("5_8_"+i.toString()).value)
-    }
-  }
-
-
-  for(var i=0; i<11; i++)
-  {
-    if(document.getElementById("6_8_"+i.toString()).checked == true)
-    {
-      per += parseInt(document.getElementById("6_8_"+i.toString()).value)
-    }
-  }
-  
-  
-
-
-  if(!isNaN(document.getElementById("punkty_org").innerHTML)&&(org+nl+des+kre+posz+an+gg+per==70))
-  {
-
-    document.getElementById("punkty_org").innerHTML
-    +=  
-    + org + "<br>";
-
-    document.getElementById("punkty_nl").innerHTML
-        +=  
-        + nl + "<br>";
-
-        document.getElementById("punkty_des").innerHTML
-        +=  
-        + des + "<br>";
-
-        document.getElementById("punkty_kre").innerHTML
-        +=  
-        + kre + "<br>";
-
-        document.getElementById("punkty_posz").innerHTML
-        +=  
-        + posz + "<br>";
-
-        document.getElementById("punkty_an").innerHTML
-        +=  
-        + an + "<br>";
-
-        document.getElementById("punkty_gg").innerHTML
-        +=  
-        + gg + "<br>";
-
-        document.getElementById("punkty_per").innerHTML
-        +=  
-        + per + "<br>";
-
-
-  }
-  else{
-    alert("Nie wypełniłeś wszytkich pól");
-  }
-  
-}
 
 
 function display(id) { 
