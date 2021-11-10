@@ -177,20 +177,20 @@ td, th
     background-color: #E0FFFF;
     font-size: 20px;
     font-weight: bold;
-    border: 3px solid green;
+    border: 3px solid black;
     display: block;
 }
 
 #nazwa_typu
 {
-    border: 3px solid #2E8B57;
-    color: green;
+    border: 3px solid black;
+    color: black;
     font-weight: bold;
     background-color: #ffbf8381;
 }
 
 #greenfont
 {
-    color:green;
+    color:black;
 }
 
