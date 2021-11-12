@@ -276,30 +276,35 @@ if(d[i]=="E")E++;
 if(d[i]=="F")F++;
 
 }  
-if(A>C){
-  document.getElementById("punkty_1").innerHTML
-  +=  "W";
+if(A+B+C+D+E+F==21){
+
+  if(A>C){
+    document.getElementById("punkty_1").innerHTML
+    +=  "W";
+  }
+  if(A<C){
+    document.getElementById("punkty_1").innerHTML
+    +=  "K";
+  }
+  if(D>F){
+    document.getElementById("punkty_1").innerHTML
+    +=  "S";
+  }
+  if(D<F){
+    document.getElementById("punkty_1").innerHTML
+    +=  "Z";
+  }
+  if(B>E){
+    document.getElementById("punkty_1").innerHTML
+    +=  "W";
+  }
+  if(B<E){
+    document.getElementById("punkty_1").innerHTML
+    +=  "Z";
+  }
+
 }
-if(A<C){
-  document.getElementById("punkty_1").innerHTML
-  +=  "K";
-}
-if(D>F){
-  document.getElementById("punkty_1").innerHTML
-  +=  "S";
-}
-if(D<F){
-  document.getElementById("punkty_1").innerHTML
-  +=  "Z";
-}
-if(B>E){
-  document.getElementById("punkty_1").innerHTML
-  +=  "W";
-}
-if(B<E){
-  document.getElementById("punkty_1").innerHTML
-  +=  "Z";
-}
+
 
 
 
