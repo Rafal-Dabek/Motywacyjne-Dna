@@ -97,6 +97,10 @@ if(d[i]=="E")E++;
 if(d[i]=="F")F++;
 }
 
+if((A+B+C+D+E+F)!=21){
+  alert("Nie wszytkie odpowiedzi są zaznaczone")
+}
+
 if(A+B+C+D+E+F==21 && (is_pressed==false)){
   is_pressed=true;
   console.log(is_pressed);
@@ -130,6 +134,7 @@ if(A+B+C+D+E+F==21 && (is_pressed==false)){
   }
 
 }
+
 
 }
 
