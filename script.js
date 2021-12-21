@@ -132,6 +132,7 @@ if(A+B+C+D+E+F==21 && (is_pressed==false)){
     +=  "Z";
    
   }
+  document.getElementById("results").style.display = "inline";
 
 }
 
